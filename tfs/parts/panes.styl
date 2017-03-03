@@ -1,0 +1,57 @@
+.left-hub-content
+.right-hub-content
+    top 0 !important
+
+.menu-item[title="Save all queries"]
+.node-context-menu
+    display none
+
+.query-folder-explorer .toolbar
+    margin-left 5px
+
+.hub-splitter
+    $sidebar-width = 200px
+    $sidebar-compact-width = 10px
+
+    > .leftPane
+        top 32px
+        box-shadow 0 0 0 0 rgba(0, 0, 0, 0.75)
+        width $sidebar-width !important
+        background white
+        border-top 1px solid #e3e3e3
+        border-top-right-radius 4px
+        transform translateX( $sidebar-compact-width - $sidebar-width )
+        transition .1s 0s cubic-bezier(0.4, 0, 0, 1)
+        transition-property transform, box-shadow
+        z-index 10
+
+        &:hover
+            transform translateX(0)
+            box-shadow 4px 2px 0 0 rgba(0, 0, 0, 0.1)
+
+    > .rightPane
+        left $sidebar-compact-width !important
+
+    > .handleBar
+    > .toggle-button
+        display none
+
+.handleBar
+    z-index 100
+    overflow visible !important
+
+    &:hover
+        background #e8eef4 !important
+
+    &:after
+        content ''
+        position absolute
+        top 0
+        left -5px
+        right -5px
+        bottom 0
+        background hsla(0, 100%, 50%, .01)
+        opacity 0.5
+
+    &:hover:after
+        opacity 1

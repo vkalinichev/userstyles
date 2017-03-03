@@ -1,0 +1,17 @@
+stripes( $angle, $color1, $color2, $size )
+    $c1 = $color1
+    $c2 = $color2
+    background-image linear-gradient( $angle, $c1 25%, $c2 25%, $c2 50%, $c1 50%, $c1 75%, $c2 75% )
+    background-size $size $size
+    animation progress-slide-to-left .15s linear infinite
+
+    @keyframes progress-slide-to-left
+        from { background-position: 0 }
+        to { background-position: -1*$size }
+
+.hub-progress
+    top 0 !important
+    left 0 !important
+    right 0 !important
+
+    stripes(45deg, #f1f1f1, $stripe-color, 12px )
