@@ -1,0 +1,110 @@
+#m_tg_div_w
+    max-height: none !important
+    height auto !important
+
+.topBg
+    display block !important
+
+.topMinMenu,
+.topMinExit
+    display none !important
+
+.place .dopMenu
+    opacity 0
+    animation .2s .1s show-dop-menu ease-in-out forwards
+
+@keyframes show-dop-menu
+    from
+        opacity 0
+        transform translateX(10px)
+
+    to
+        opacity 1
+        transform none
+
+.plname
+    margin 0 !important
+
+.green
+    color #0a0
+
+#m_tg_div_w
+    word-spacing: 0
+
+.tgtpl,
+.tgtpl + .tMini
+    float none !important
+    display inline-block
+    margin 0 !important
+    background hsl(220, 40%, 96%)
+    outline-offset: -1px
+    overflow hidden
+    line-height: 1
+    border-radius: 3px
+    font-size: 13px
+
+.tgtpl > span,
+.tgtpl + .tMini a:after
+    position relative
+    display inline-block
+    padding .2em .1em .25em .35em
+    background none !important
+    color hsl(220, 14%, 57%) !important
+
+.tgtpl > span:after
+    content ''
+    position absolute
+    background hsl(220, 40%, 96%)
+    top 0
+    width .3em
+    right 0
+    bottom 0
+
+.tgtpl:nth-last-child(2) > span
+    padding-right: .4em
+
+.tgtpl + .tMini
+    font-size: 0
+    height auto !important
+    padding-top: 0 !important
+
+.tgtpl + .tMini a
+    text-decoration: none
+    display inline-block
+
+.tgtpl + .tMini a:hover
+    background hsl(220, 45%, 92%)
+
+.tgtpl + .tMini a:active
+    background hsl(220, 35%, 85%)
+
+.tgtpl + .tMini a:after
+    content '...'
+    font-size: 13px
+    padding-left: 1em
+    padding-right: 1em
+
+.tgtpl > span[style*='background: rgb(153, 153, 102)'],
+.tgtpl > span[style*='background: rgb(153, 153, 102)']:after
+    background hsl(40, 80%, 80%) !important
+    color #000 !important
+
+a
+    -webkit-user-drag: none
+
+#w_comment[style*='color:gray']
+    color #bbb !important
+
+.mainForm,
+.tabActive
+    background hsl(60, 75%, 96%) !important
+
+#w_short_tags
+    background hsla(0, 0%, 100%, .8) !important
+    padding-bottom: 4px !important
+    border none
+    box-shadow: 0 0 0 0.05em hsla(0, 0%, 0%, .05)
+    overflow auto
+
+#m_tg_div_w
+    overflow initial !important
