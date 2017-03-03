@@ -1,0 +1,15 @@
+{
+  "name": "userstyles",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/vkalinichev/userstyles.git",
+  "author": "Vladimir Kalinichev <wrumly@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "stylus */*.styl -o ./dist/ -w",
+    "build": "stylus */*.styl -o ./dist/"
+  },
+  "dependencies": {
+    "stylus": "^0.54.5"
+  }
+}

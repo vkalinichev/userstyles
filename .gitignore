@@ -1,3 +1,5 @@
+*.css
+
 .idea
 
 node_modules
