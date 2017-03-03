@@ -1,0 +1,19 @@
+/* Container */
+div.tabAll > div
+    padding-left 1px
+    padding-right 1px
+
+/* Inactive */
+div.tabPassive
+    color hsla( 0, 0%, 0%, .5) !important
+    box-shadow 0 0 0 .05em hsl( 0, 0%, 80%) inset !important
+    height 26px !important
+    background #f1f1f1 !important
+    z-index 0
+
+/* Active */
+.tabActive
+    box-shadow 0 0.05em 0 0 hsl( 0, 0%, 80%) inset, -0.05em 0 0 0 hsl( 0, 0%, 80%) inset, 0.05em 0 0 0 hsl( 0, 0%, 80%) inset !important
+    top -1px !important
+    padding-top 6px !important
+    height 26px !important
