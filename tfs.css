@@ -1,0 +1,161 @@
+@-moz-document domain("tfs") {
+    body,
+    input,
+    button,
+    textarea,
+    select,
+    .workitem-info-bar {
+        font-family: sans-serif !important;
+    }
+
+    a {
+        -webkit-user-drag: none;
+    }
+
+    legend,
+    label {
+        user-select: none;
+        cursor: default;
+    }
+
+    .main {
+        background: #f1f1f1;
+    }
+
+    .content-section {
+        background: none
+    }
+
+    .hub-pivot,
+    .hub-pivot-content {
+        background: none;
+    }
+
+    .work-item-list {
+        background: white;
+    }
+
+    .work-item-form {
+        background: white;
+    }
+    .header-post11 .hub-groups-section,
+    .ui-tabs .ui-tabs-nav {
+        text-transform: none;
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    .hub-title {
+        display: none;
+    }
+
+    .hub-progress {
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: linear-gradient(45deg, #f1f1f1, #f1f1f1 25%, #007acc 25%, #007acc 50%, #f1f1f1 50%, #f1f1f1 75%, #007acc 75%, #007acc) center / 12px 12px !important;
+        animation: progress-slide-to-left .15s linear infinite;
+    }
+
+    .right-hub-content {
+        top: 0 !important;
+    }
+
+    @keyframes progress-slide-to-left {
+        from {
+            background-position: 0;
+        }
+        to {
+            background-position: -12px;
+        }
+    }
+
+    #navWrapper {
+        height: 30px !important;
+    }
+
+    .header-post11 + .content-section {
+        top: 61px;
+    }
+
+    .hub-nav-structure {
+        display: flex
+    }
+
+    .hubs-section-nav {
+        position: relative !important;
+        top: 4px !important;
+        left: 0 !important;
+    }
+
+    .workitem-info-bar div.info-text-wrapper {
+        font-size: 14px;
+    }
+
+    .node-context-menu {
+        display: none;
+    }
+
+    .handleBar {
+        z-index: 100;
+        overflow: visible !important;
+    }
+
+    .handleBar:hover {
+        background: #e8eef4 !important;
+    }
+
+    .handleBar:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -5px;
+        right: -5px;
+        bottom: 0;
+        background: hsla(0, 100%, 50%, .01);
+        opacity: 0.5;
+    }
+
+    .handleBar:hover:after {
+        opacity: 1;
+    }
+
+    .query-folder-explorer .toolbar {
+        margin-left: 5px
+    }
+
+    .menu-item[title="Save all queries"] {
+        display: none;
+    }
+    .left-hub-content {
+        top: 0;
+    }
+    .hub-splitter > .leftPane {
+        top: 32px;
+        box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.75);
+        width: 200px !important;
+        background: white;
+        border-top: 1px solid #e3e3e3;
+        border-top-right-radius: 4px;
+        transform: translateX(-190px);
+        transition: .1s 0s cubic-bezier(0.4, 0, 0, 1);
+        transition-property: transform, box-shadow;
+        z-index: 10;
+    }
+
+    .hub-splitter > .leftPane:hover {
+        transform: translateX(0);
+        box-shadow: 4px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .hub-splitter > .rightPane {
+        left: 10px !important;
+    }
+
+    .hub-splitter > .handleBar,
+    .hub-splitter > .toggle-button {
+        display: none;
+    }
+}
