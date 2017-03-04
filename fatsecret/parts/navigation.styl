@@ -1,0 +1,58 @@
+.menuItem,
+.menuItem a
+    position relative
+    background none !important
+    color white !important
+    font-weight 400
+    text-transform none
+
+.menuItem.highlight:after
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    margin 0 auto
+    width 12px
+    height 12px
+    background hsl(90, 16%, 95%)
+    transform translateY(50%) scale(2,1) rotate(45deg)
+
+.main.widget > .selectable
+    background-color transparent !important
+
+.main.widget > .selectable:first-child
+    border-radius 4px 0 0 4px
+
+.main.widget > .selectable:nth-last-child(2)
+    border-radius 0 4px 4px 0 padding-right 12px
+
+.main.widget > .selectable:hover
+    box-shadow 0 -.3em hsl(211, 30%, 90%) inset
+    background-color hsl(211, 30%, 98%) !important
+
+.main.widget > .selected
+    box-shadow 0 -.3em hsl( 131, 56%, 45% ) inset
+
+.main.widget > .selected .inner
+    border none !important
+    padding 8px 0 0 8px !important
+
+.main.widget .subheading
+    display inline-block
+    float none
+    width auto
+    line-height 1
+    border-radius .3em
+    padding .3em .35em .2em 0
+    margin-bottom 2px
+
+.main.widget .subheading[style="color#C05F5F"]
+    color hsl(0, 55%, 55%) !important
+
+.main.widget .subheading[style="color#399941"]
+    color hsl(125, 55%, 40%) !important
+
+.dottedBox.widget div.datePicker
+    border 1px solid hsl(211, 30%, 90%)
+    padding-bottom 6px

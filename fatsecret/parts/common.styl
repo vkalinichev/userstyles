@@ -1,0 +1,88 @@
+.footerPanel
+    display none
+
+.MyFSHeaderFooterAdditional,
+.dottedBox.main.solid,
+table.greybox
+    /* SOURCE hsl(90, 22%, 93%)*/
+    background hsla( 0, 0%, 0%, .05)
+    border-radius 4px
+
+.MyFSHeaderFooterAdditional
+    margin-top 20px
+
+.dottedBox
+    border none !important
+
+.MyFSHeader
+    display none
+
+/* BACKGROUND*/
+body,
+.mainContent,
+#content
+    background-color $main-bg
+
+td[class^=border]
+    border none !important
+
+/* Add button */
+.food_main_link
+    background none
+    position relative
+    margin-top 8px
+
+    &:after
+        content ''
+        position absolute
+        top 0
+        left 18px
+        right 12px
+        height 1px
+        box-shadow 0 -.05em $thin-border-color
+        background transparent
+
+.main.widget,
+.MyFSHeaderFooterAdditional,
+.generic.foodsTbl
+    background white
+    border-radius 4px
+    box-shadow 0 0 0 .05em $thick-border-color
+
+.dottedBox.main div.vr
+    border-left none
+    box-shadow .05em 0 0 0 $thin-border-color inset
+    width 1px
+
+.generic.foodsTbl
+    margin-top 20px
+
+/* Table header*/
+.generic.foodsNutritionTbl
+    position relative
+
+    > tbody > tr[style*='height']
+        height 32px !important
+        vertical-align bottom
+
+    td:not([class]) > &:after
+        content ''
+        position absolute
+        left 18px
+        right 12px
+        bottom -14px
+        height 1px
+        box-shadow 0 .05em hsl(211, 30%, 92%)
+
+    td[width='10']
+        width 9px !important
+
+    .sub
+        padding 0 6px 0 1px
+
+        &[style*='font-weight:bold']
+            font-weight inherit !important
+
+.greytitlex
+    padding-left 20px !important
+    font-size 18px !important
